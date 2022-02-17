@@ -9,8 +9,14 @@ print(r_get.json())
 # Пример POST-запроса 1 (создание пользователя)
 link_2 = "https://reqres.in/api/users"
 data = {"name": "Artyom", "job": "Tester"}
-r_post = requests.post(link, data=data)
+r_post = requests.post(link_2, data=data)
 print(r_post.json())
+
+dic_response = r_post.json()
+print(type(dic_response))
+print(dic_response.get("createdAt"))
+
+
 
 # Пример POST-запроса 2 (авторизация и получение токена)
 link_3 = "https://reqres.in/api/login"
