@@ -2,7 +2,7 @@
 def show_zarplata(salary = 35000, nds = 10, ndfl = 20, pzdc = 17):
     final_salary = salary - nds + ndfl * pzdc
     print(f"Конечная зарплата - {final_salary} миска рис")
-show_zarplata(50000)
+show_zarplata(50000, pzdc=10)
 
 print("-------------------")
 
