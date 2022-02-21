@@ -1,3 +1,11 @@
+### Вызов функции с несовпадающим кол-вом аргументов
+def show_zarplata(salary = 35000, nds = 10, ndfl = 20, pzdc = 17):
+    final_salary = salary - nds + ndfl * pzdc
+    print(f"Конечная зарплата - {final_salary} миска рис")
+show_zarplata(50000)
+
+print("-------------------")
+
 ### Функция с именованными аргументами
 def show_pet_names(cat, dog, parrot, squirrel):
     print(f"Имя кота - {cat}")
@@ -42,3 +50,5 @@ def show_employee_info(**info):
     for name, age in info.items():
         print(f"Имя сотрудника: {name}, возраст: {age}")
 show_employee_info(Артём=24, Газгулл=4000, Петька=13)
+
+# *args — list неименованных аргументов, **kwargs — dict именованных аргументов
